@@ -1,0 +1,1061 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C1C971B884C1E1E1C0E73C /* Pods_RentMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F4A206E766AAEB4A901CBB /* Pods_RentMe.framework */; };
+		9903C03726762FC2003FB5F1 /* BoxMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9903C03626762FC2003FB5F1 /* BoxMapViewModel.swift */; };
+		9907282F2674BFC300DCE761 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907282E2674BFC300DCE761 /* UIConstants.swift */; };
+		9907283A2674C34600DCE761 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990728392674C34600DCE761 /* UIColor+RGB.swift */; };
+		9907283F2674C62500DCE761 /* CarPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907283E2674C62500DCE761 /* CarPreviewView.swift */; };
+		990728442674C68B00DCE761 /* UICarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990728432674C68B00DCE761 /* UICarInfo.swift */; };
+		990728492674C6BF00DCE761 /* CarPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990728482674C6BF00DCE761 /* CarPreviewViewModel.swift */; };
+		9907284E2674C70E00DCE761 /* UICarInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907284D2674C70E00DCE761 /* UICarInfoParser.swift */; };
+		9908C93326775B4B006641EE /* CarInfoJSONSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C93226775B4B006641EE /* CarInfoJSONSamples.swift */; };
+		9908C93E26775C15006641EE /* TestCarInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C93D26775C15006641EE /* TestCarInfoParser.swift */; };
+		9908C94326776051006641EE /* TestUICarInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C94226776051006641EE /* TestUICarInfoParser.swift */; };
+		9908C9512677626A006641EE /* TestCarColorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C9502677626A006641EE /* TestCarColorParser.swift */; };
+		9908C9662677643A006641EE /* TestCarInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C9652677643A006641EE /* TestCarInfoManager.swift */; };
+		9908C96C267764A9006641EE /* NetworkMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908C96B267764A9006641EE /* NetworkMocking.swift */; };
+		990C0340267773600029FF3A /* MapScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C033F267773600029FF3A /* MapScreenUITests.swift */; };
+		990C03452677736A0029FF3A /* ListScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C03442677736A0029FF3A /* ListScreenUITests.swift */; };
+		990C035D2677793B0029FF3A /* RentMeTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C035C2677793B0029FF3A /* RentMeTesting.swift */; };
+		990C036226777CB80029FF3A /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C036126777CB80029FF3A /* NetworkSession.swift */; };
+		993375F22674D8D500DC3B8A /* RentCarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993375F12674D8D500DC3B8A /* RentCarHeaderView.swift */; };
+		993393332674950F005DC656 /* CarImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993393322674950F005DC656 /* CarImageInteractor.swift */; };
+		99339338267496A1005DC656 /* CarImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99339337267496A1005DC656 /* CarImageFetcher.swift */; };
+		99339340267496C2005DC656 /* CarImageRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9933933F267496C2005DC656 /* CarImageRequestBuilder.swift */; };
+		994E8A132673AA450048D974 /* CarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E8A122673AA450048D974 /* CarsRepository.swift */; };
+		994E8A192673ACE60048D974 /* CarInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994E8A182673ACE60048D974 /* CarInfoManager.swift */; };
+		994F4BF026748CD400475D0C /* CarsInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4BEF26748CD400475D0C /* CarsInfoInteractor.swift */; };
+		994F4BFB26748E4300475D0C /* UICarSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4BFA26748E4300475D0C /* UICarSummary.swift */; };
+		994F4C0026748E9700475D0C /* UICarSummaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4BFF26748E9700475D0C /* UICarSummaryParser.swift */; };
+		994F4C092674918C00475D0C /* CarListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4C082674918C00475D0C /* CarListItemViewModel.swift */; };
+		994F4C0F267492C200475D0C /* CarImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4C0E267492C200475D0C /* CarImageCacheManager.swift */; };
+		994F4C17267492F100475D0C /* CarImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F4C16267492F100475D0C /* CarImagesRepository.swift */; };
+		9970856F26773864004502A0 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970856E26773864004502A0 /* NetworkStatus.swift */; };
+		99708574267739D8004502A0 /* InternetConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99708573267739D8004502A0 /* InternetConnectionErrorView.swift */; };
+		997318922676295D0069954E /* BoxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997318912676295D0069954E /* BoxMapView.swift */; };
+		9975F4352674F48000EE37EF /* RentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F4342674F48000EE37EF /* RentButton.swift */; };
+		9975F43A2674F54C00EE37EF /* CarInfoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F4392674F54C00EE37EF /* CarInfoDetailsView.swift */; };
+		9987C96626752A90002DB2BF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9987C96526752A90002DB2BF /* ErrorHandling.swift */; };
+		99A3BA7426738B0900D7EF86 /* RentMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3BA7326738B0900D7EF86 /* RentMeApp.swift */; };
+		99A3BA7626738B0900D7EF86 /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3BA7526738B0900D7EF86 /* PrimaryView.swift */; };
+		99A3BA7826738B0B00D7EF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A3BA7726738B0B00D7EF86 /* Assets.xcassets */; };
+		99A3BA7B26738B0B00D7EF86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A3BA7A26738B0B00D7EF86 /* Preview Assets.xcassets */; };
+		99AD35CD26767943000A6BE4 /* CarMapAnnotationImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD35CC26767943000A6BE4 /* CarMapAnnotationImageHandler.swift */; };
+		99AD35D526767A9C000A6BE4 /* GenericErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD35D426767A9C000A6BE4 /* GenericErrorMessageView.swift */; };
+		99BF0B6D26738CE00029D603 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99BF0B6C26738CE00029D603 /* README.txt */; };
+		99BF0B8026738DE40029D603 /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0B7F26738DE40029D603 /* CarInfo.swift */; };
+		99BF0B8C26738E5A0029D603 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0B8B26738E5A0029D603 /* NetworkingAPI.swift */; };
+		99BF0B9626738FF20029D603 /* RentMeComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0B9526738FF20029D603 /* RentMeComponents.swift */; };
+		99BF0B9E2673904A0029D603 /* PrimaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0B9D2673904A0029D603 /* PrimaryViewModel.swift */; };
+		99BF0BA52673908D0029D603 /* CarMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BA42673908D0029D603 /* CarMap.swift */; };
+		99BF0BAA267390A50029D603 /* CarInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BA9267390A50029D603 /* CarInfoParser.swift */; };
+		99BF0BB4267391980029D603 /* CarMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BB3267391980029D603 /* CarMapView.swift */; };
+		99BF0BB9267391A60029D603 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BB8267391A60029D603 /* CarListView.swift */; };
+		99BF0BBE267391C80029D603 /* CarMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BBD267391C80029D603 /* CarMapViewModel.swift */; };
+		99BF0BC3267391CF0029D603 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BC2267391CF0029D603 /* CarListViewModel.swift */; };
+		99BF0BCA267393130029D603 /* CarInfoRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BC9267393130029D603 /* CarInfoRequestBuilder.swift */; };
+		99BF0BCF2673931C0029D603 /* CarInfoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BCE2673931C0029D603 /* CarInfoFetcher.swift */; };
+		99BF0BD7267393A10029D603 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BF0BD6267393A10029D603 /* Errors.swift */; };
+		99CED10E2673BEDF00505AAA /* CarListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CED10D2673BEDF00505AAA /* CarListItem.swift */; };
+		99D98DE52676433600A76947 /* CarMapPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D98DE42676433600A76947 /* CarMapPosition.swift */; };
+		99D98DEA2676436800A76947 /* CarMapConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D98DE92676436800A76947 /* CarMapConstraints.swift */; };
+		99DD5DEF26739C5B001B924C /* CarColorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD5DEE26739C5B001B924C /* CarColorParser.swift */; };
+		99FC842E2673AE6500974EDE /* CarsInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FC842D2673AE6500974EDE /* CarsInfoParser.swift */; };
+		99FF3D8026765649002885C3 /* Double+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF3D7F26765649002885C3 /* Double+Clamp.swift */; };
+		99FF3D8826765E42002885C3 /* CarMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF3D8726765E42002885C3 /* CarMapAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99A3BA8226738B0C00D7EF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A3BA6826738B0900D7EF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A3BA6F26738B0900D7EF86;
+			remoteInfo = RentMe;
+		};
+		99A3BA8D26738B0C00D7EF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A3BA6826738B0900D7EF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A3BA6F26738B0900D7EF86;
+			remoteInfo = RentMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21863DC5B4C8386564757069 /* Pods-RentMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentMe.release.xcconfig"; path = "Target Support Files/Pods-RentMe/Pods-RentMe.release.xcconfig"; sourceTree = "<group>"; };
+		89F4A206E766AAEB4A901CBB /* Pods_RentMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903C03626762FC2003FB5F1 /* BoxMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxMapViewModel.swift; sourceTree = "<group>"; };
+		9907282E2674BFC300DCE761 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		990728392674C34600DCE761 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		9907283E2674C62500DCE761 /* CarPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPreviewView.swift; sourceTree = "<group>"; };
+		990728432674C68B00DCE761 /* UICarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICarInfo.swift; sourceTree = "<group>"; };
+		990728482674C6BF00DCE761 /* CarPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPreviewViewModel.swift; sourceTree = "<group>"; };
+		9907284D2674C70E00DCE761 /* UICarInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICarInfoParser.swift; sourceTree = "<group>"; };
+		9908C93226775B4B006641EE /* CarInfoJSONSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoJSONSamples.swift; sourceTree = "<group>"; };
+		9908C93D26775C15006641EE /* TestCarInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCarInfoParser.swift; sourceTree = "<group>"; };
+		9908C94226776051006641EE /* TestUICarInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUICarInfoParser.swift; sourceTree = "<group>"; };
+		9908C9502677626A006641EE /* TestCarColorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCarColorParser.swift; sourceTree = "<group>"; };
+		9908C9652677643A006641EE /* TestCarInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCarInfoManager.swift; sourceTree = "<group>"; };
+		9908C96B267764A9006641EE /* NetworkMocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMocking.swift; sourceTree = "<group>"; };
+		990C033F267773600029FF3A /* MapScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenUITests.swift; sourceTree = "<group>"; };
+		990C03442677736A0029FF3A /* ListScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenUITests.swift; sourceTree = "<group>"; };
+		990C035C2677793B0029FF3A /* RentMeTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentMeTesting.swift; sourceTree = "<group>"; };
+		990C036126777CB80029FF3A /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		993375F12674D8D500DC3B8A /* RentCarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentCarHeaderView.swift; sourceTree = "<group>"; };
+		993393322674950F005DC656 /* CarImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageInteractor.swift; sourceTree = "<group>"; };
+		99339337267496A1005DC656 /* CarImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageFetcher.swift; sourceTree = "<group>"; };
+		9933933F267496C2005DC656 /* CarImageRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageRequestBuilder.swift; sourceTree = "<group>"; };
+		994E8A122673AA450048D974 /* CarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsRepository.swift; sourceTree = "<group>"; };
+		994E8A182673ACE60048D974 /* CarInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoManager.swift; sourceTree = "<group>"; };
+		994F4BEF26748CD400475D0C /* CarsInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsInfoInteractor.swift; sourceTree = "<group>"; };
+		994F4BFA26748E4300475D0C /* UICarSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICarSummary.swift; sourceTree = "<group>"; };
+		994F4BFF26748E9700475D0C /* UICarSummaryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICarSummaryParser.swift; sourceTree = "<group>"; };
+		994F4C082674918C00475D0C /* CarListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemViewModel.swift; sourceTree = "<group>"; };
+		994F4C0E267492C200475D0C /* CarImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageCacheManager.swift; sourceTree = "<group>"; };
+		994F4C16267492F100475D0C /* CarImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImagesRepository.swift; sourceTree = "<group>"; };
+		9970856E26773864004502A0 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		99708573267739D8004502A0 /* InternetConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionErrorView.swift; sourceTree = "<group>"; };
+		997318912676295D0069954E /* BoxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxMapView.swift; sourceTree = "<group>"; };
+		9975F4342674F48000EE37EF /* RentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentButton.swift; sourceTree = "<group>"; };
+		9975F4392674F54C00EE37EF /* CarInfoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoDetailsView.swift; sourceTree = "<group>"; };
+		9987C96526752A90002DB2BF /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		99A3BA7026738B0900D7EF86 /* RentMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3BA7326738B0900D7EF86 /* RentMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentMeApp.swift; sourceTree = "<group>"; };
+		99A3BA7526738B0900D7EF86 /* PrimaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryView.swift; sourceTree = "<group>"; };
+		99A3BA7726738B0B00D7EF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99A3BA7A26738B0B00D7EF86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99A3BA7C26738B0B00D7EF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A3BA8126738B0C00D7EF86 /* RentMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3BA8726738B0C00D7EF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A3BA8C26738B0C00D7EF86 /* RentMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3BA9226738B0C00D7EF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99AD35CC26767943000A6BE4 /* CarMapAnnotationImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapAnnotationImageHandler.swift; sourceTree = "<group>"; };
+		99AD35D426767A9C000A6BE4 /* GenericErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorMessageView.swift; sourceTree = "<group>"; };
+		99BF0B6C26738CE00029D603 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		99BF0B7F26738DE40029D603 /* CarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
+		99BF0B8B26738E5A0029D603 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		99BF0B9526738FF20029D603 /* RentMeComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentMeComponents.swift; sourceTree = "<group>"; };
+		99BF0B9D2673904A0029D603 /* PrimaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewModel.swift; sourceTree = "<group>"; };
+		99BF0BA42673908D0029D603 /* CarMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMap.swift; sourceTree = "<group>"; };
+		99BF0BA9267390A50029D603 /* CarInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoParser.swift; sourceTree = "<group>"; };
+		99BF0BB3267391980029D603 /* CarMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapView.swift; sourceTree = "<group>"; };
+		99BF0BB8267391A60029D603 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		99BF0BBD267391C80029D603 /* CarMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModel.swift; sourceTree = "<group>"; };
+		99BF0BC2267391CF0029D603 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		99BF0BC9267393130029D603 /* CarInfoRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoRequestBuilder.swift; sourceTree = "<group>"; };
+		99BF0BCE2673931C0029D603 /* CarInfoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoFetcher.swift; sourceTree = "<group>"; };
+		99BF0BD6267393A10029D603 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		99CED10D2673BEDF00505AAA /* CarListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItem.swift; sourceTree = "<group>"; };
+		99D98DE42676433600A76947 /* CarMapPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapPosition.swift; sourceTree = "<group>"; };
+		99D98DE92676436800A76947 /* CarMapConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapConstraints.swift; sourceTree = "<group>"; };
+		99DD5DEE26739C5B001B924C /* CarColorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarColorParser.swift; sourceTree = "<group>"; };
+		99FC842D2673AE6500974EDE /* CarsInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarsInfoParser.swift; path = ../../../../../../CarsInfoParser.swift; sourceTree = "<group>"; };
+		99FF3D7F26765649002885C3 /* Double+Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Clamp.swift"; sourceTree = "<group>"; };
+		99FF3D8726765E42002885C3 /* CarMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapAnnotation.swift; sourceTree = "<group>"; };
+		E6F05A28F9D7A14259423DAD /* Pods-RentMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentMe.debug.xcconfig"; path = "Target Support Files/Pods-RentMe/Pods-RentMe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99A3BA6D26738B0900D7EF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C1C971B884C1E1E1C0E73C /* Pods_RentMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA7E26738B0C00D7EF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA8926738B0C00D7EF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C78CF9554BCDD96BFBA8E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F4A206E766AAEB4A901CBB /* Pods_RentMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		990728272674BF4200DCE761 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				993375F12674D8D500DC3B8A /* RentCarHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		9908C93126775B3E006641EE /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				9908C93226775B4B006641EE /* CarInfoJSONSamples.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		9908C9552677634B006641EE /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				9908C93D26775C15006641EE /* TestCarInfoParser.swift */,
+				9908C94226776051006641EE /* TestUICarInfoParser.swift */,
+				9908C9502677626A006641EE /* TestCarColorParser.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		9908C9592677641D006641EE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9908C9652677643A006641EE /* TestCarInfoManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9908C96A2677649A006641EE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9908C96B267764A9006641EE /* NetworkMocking.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		994E8A172673ACD30048D974 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				994E8A182673ACE60048D974 /* CarInfoManager.swift */,
+				994F4C0E267492C200475D0C /* CarImageCacheManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		994F4BEE26748CC800475D0C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				994F4BEF26748CD400475D0C /* CarsInfoInteractor.swift */,
+				993393322674950F005DC656 /* CarImageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		994F4C042674914E00475D0C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				990728432674C68B00DCE761 /* UICarInfo.swift */,
+				994F4BFA26748E4300475D0C /* UICarSummary.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		9975F4282674F29700EE37EF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				997318912676295D0069954E /* BoxMapView.swift */,
+				9975F4392674F54C00EE37EF /* CarInfoDetailsView.swift */,
+				9975F4342674F48000EE37EF /* RentButton.swift */,
+				99AD35D426767A9C000A6BE4 /* GenericErrorMessageView.swift */,
+				99708573267739D8004502A0 /* InternetConnectionErrorView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		99A3BA6726738B0900D7EF86 = {
+			isa = PBXGroup;
+			children = (
+				99BF0B6C26738CE00029D603 /* README.txt */,
+				99A3BA7226738B0900D7EF86 /* RentMe */,
+				99A3BA8426738B0C00D7EF86 /* RentMeTests */,
+				99A3BA8F26738B0C00D7EF86 /* RentMeUITests */,
+				99A3BA7126738B0900D7EF86 /* Products */,
+				A79729385123AB6609211ED2 /* Pods */,
+				3C78CF9554BCDD96BFBA8E7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99A3BA7126738B0900D7EF86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99A3BA7026738B0900D7EF86 /* RentMe.app */,
+				99A3BA8126738B0C00D7EF86 /* RentMeTests.xctest */,
+				99A3BA8C26738B0C00D7EF86 /* RentMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99A3BA7226738B0900D7EF86 /* RentMe */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0B9426738FE00029D603 /* App */,
+				994F4BEE26748CC800475D0C /* Interactor */,
+				99A3BAA226738B6200D7EF86 /* Model */,
+				99A3BAA126738B5F00D7EF86 /* View */,
+				99A3BAA326738B6500D7EF86 /* ViewModel */,
+				99BF0BA22673906E0029D603 /* Services */,
+				99A3BAA426738B6B00D7EF86 /* Utilities */,
+				99A3BA7726738B0B00D7EF86 /* Assets.xcassets */,
+				99A3BA7C26738B0B00D7EF86 /* Info.plist */,
+				99A3BA7926738B0B00D7EF86 /* Preview Content */,
+			);
+			path = RentMe;
+			sourceTree = "<group>";
+		};
+		99A3BA7926738B0B00D7EF86 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99A3BA7A26738B0B00D7EF86 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99A3BA8426738B0C00D7EF86 /* RentMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9908C96A2677649A006641EE /* Mocks */,
+				9908C93126775B3E006641EE /* Samples */,
+				9908C9592677641D006641EE /* Networking */,
+				9908C9552677634B006641EE /* Parsing */,
+				99A3BA8726738B0C00D7EF86 /* Info.plist */,
+			);
+			path = RentMeTests;
+			sourceTree = "<group>";
+		};
+		99A3BA8F26738B0C00D7EF86 /* RentMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				990C033F267773600029FF3A /* MapScreenUITests.swift */,
+				990C03442677736A0029FF3A /* ListScreenUITests.swift */,
+				99A3BA9226738B0C00D7EF86 /* Info.plist */,
+			);
+			path = RentMeUITests;
+			sourceTree = "<group>";
+		};
+		99A3BAA126738B5F00D7EF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9907282E2674BFC300DCE761 /* UIConstants.swift */,
+				99A3BA7526738B0900D7EF86 /* PrimaryView.swift */,
+				99BF0BB3267391980029D603 /* CarMapView.swift */,
+				99BF0BB8267391A60029D603 /* CarListView.swift */,
+				9907283E2674C62500DCE761 /* CarPreviewView.swift */,
+				990728272674BF4200DCE761 /* Header */,
+				99CED10C2673BED400505AAA /* Item */,
+				9975F4282674F29700EE37EF /* Other */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99A3BAA226738B6200D7EF86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0B7E26738DDC0029D603 /* Business */,
+				994F4C042674914E00475D0C /* Interface */,
+				99BF0B7D26738DD60029D603 /* Repository */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99A3BAA326738B6500D7EF86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0B9D2673904A0029D603 /* PrimaryViewModel.swift */,
+				99BF0BBD267391C80029D603 /* CarMapViewModel.swift */,
+				99BF0BC2267391CF0029D603 /* CarListViewModel.swift */,
+				994F4C082674918C00475D0C /* CarListItemViewModel.swift */,
+				990728482674C6BF00DCE761 /* CarPreviewViewModel.swift */,
+				9903C03626762FC2003FB5F1 /* BoxMapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		99A3BAA426738B6B00D7EF86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0BD6267393A10029D603 /* Errors.swift */,
+				9987C96526752A90002DB2BF /* ErrorHandling.swift */,
+				990728392674C34600DCE761 /* UIColor+RGB.swift */,
+				99FF3D7F26765649002885C3 /* Double+Clamp.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		99BF0B7D26738DD60029D603 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				994E8A122673AA450048D974 /* CarsRepository.swift */,
+				994F4C16267492F100475D0C /* CarImagesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		99BF0B7E26738DDC0029D603 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0B7F26738DE40029D603 /* CarInfo.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		99BF0B8A26738E4C0029D603 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0B8B26738E5A0029D603 /* NetworkingAPI.swift */,
+				9970856E26773864004502A0 /* NetworkStatus.swift */,
+				990C036126777CB80029FF3A /* NetworkSession.swift */,
+				99BF0BC8267392FF0029D603 /* Fetcher */,
+				99BF0BC7267392FA0029D603 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		99BF0B9026738E890029D603 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0BA9267390A50029D603 /* CarInfoParser.swift */,
+				99FC842D2673AE6500974EDE /* CarsInfoParser.swift */,
+				99DD5DEE26739C5B001B924C /* CarColorParser.swift */,
+				9907284D2674C70E00DCE761 /* UICarInfoParser.swift */,
+				994F4BFF26748E9700475D0C /* UICarSummaryParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		99BF0B9426738FE00029D603 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				99A3BA7326738B0900D7EF86 /* RentMeApp.swift */,
+				99BF0B9526738FF20029D603 /* RentMeComponents.swift */,
+				990C035C2677793B0029FF3A /* RentMeTesting.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		99BF0BA22673906E0029D603 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				994E8A172673ACD30048D974 /* Manager */,
+				99BF0BA32673907B0029D603 /* Map */,
+				99BF0B9026738E890029D603 /* Parser */,
+				99BF0B8A26738E4C0029D603 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99BF0BA32673907B0029D603 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				99D98DE92676436800A76947 /* CarMapConstraints.swift */,
+				99BF0BA42673908D0029D603 /* CarMap.swift */,
+				99D98DE42676433600A76947 /* CarMapPosition.swift */,
+				99FF3D8726765E42002885C3 /* CarMapAnnotation.swift */,
+				99AD35CC26767943000A6BE4 /* CarMapAnnotationImageHandler.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		99BF0BC7267392FA0029D603 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0BC9267393130029D603 /* CarInfoRequestBuilder.swift */,
+				9933933F267496C2005DC656 /* CarImageRequestBuilder.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		99BF0BC8267392FF0029D603 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				99BF0BCE2673931C0029D603 /* CarInfoFetcher.swift */,
+				99339337267496A1005DC656 /* CarImageFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		99CED10C2673BED400505AAA /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				99CED10D2673BEDF00505AAA /* CarListItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		A79729385123AB6609211ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6F05A28F9D7A14259423DAD /* Pods-RentMe.debug.xcconfig */,
+				21863DC5B4C8386564757069 /* Pods-RentMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99A3BA6F26738B0900D7EF86 /* RentMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3BA9526738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMe" */;
+			buildPhases = (
+				17992B1083B70A9CCD8D1A92 /* [CP] Check Pods Manifest.lock */,
+				99A3BA6C26738B0900D7EF86 /* Sources */,
+				99A3BA6D26738B0900D7EF86 /* Frameworks */,
+				99A3BA6E26738B0900D7EF86 /* Resources */,
+				401808EC4E25AD9F59D5E736 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RentMe;
+			productName = RentMe;
+			productReference = 99A3BA7026738B0900D7EF86 /* RentMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99A3BA8026738B0C00D7EF86 /* RentMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3BA9826738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMeTests" */;
+			buildPhases = (
+				99A3BA7D26738B0C00D7EF86 /* Sources */,
+				99A3BA7E26738B0C00D7EF86 /* Frameworks */,
+				99A3BA7F26738B0C00D7EF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A3BA8326738B0C00D7EF86 /* PBXTargetDependency */,
+			);
+			name = RentMeTests;
+			productName = RentMeTests;
+			productReference = 99A3BA8126738B0C00D7EF86 /* RentMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99A3BA8B26738B0C00D7EF86 /* RentMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3BA9B26738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMeUITests" */;
+			buildPhases = (
+				99A3BA8826738B0C00D7EF86 /* Sources */,
+				99A3BA8926738B0C00D7EF86 /* Frameworks */,
+				99A3BA8A26738B0C00D7EF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A3BA8E26738B0C00D7EF86 /* PBXTargetDependency */,
+			);
+			name = RentMeUITests;
+			productName = RentMeUITests;
+			productReference = 99A3BA8C26738B0C00D7EF86 /* RentMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99A3BA6826738B0900D7EF86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					99A3BA6F26738B0900D7EF86 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					99A3BA8026738B0C00D7EF86 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 99A3BA6F26738B0900D7EF86;
+					};
+					99A3BA8B26738B0C00D7EF86 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 99A3BA6F26738B0900D7EF86;
+					};
+				};
+			};
+			buildConfigurationList = 99A3BA6B26738B0900D7EF86 /* Build configuration list for PBXProject "RentMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99A3BA6726738B0900D7EF86;
+			productRefGroup = 99A3BA7126738B0900D7EF86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99A3BA6F26738B0900D7EF86 /* RentMe */,
+				99A3BA8026738B0C00D7EF86 /* RentMeTests */,
+				99A3BA8B26738B0C00D7EF86 /* RentMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99A3BA6E26738B0900D7EF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3BA7B26738B0B00D7EF86 /* Preview Assets.xcassets in Resources */,
+				99BF0B6D26738CE00029D603 /* README.txt in Resources */,
+				99A3BA7826738B0B00D7EF86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA7F26738B0C00D7EF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA8A26738B0C00D7EF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17992B1083B70A9CCD8D1A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		401808EC4E25AD9F59D5E736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentMe/Pods-RentMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentMe/Pods-RentMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RentMe/Pods-RentMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99A3BA6C26738B0900D7EF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990728442674C68B00DCE761 /* UICarInfo.swift in Sources */,
+				99BF0B9E2673904A0029D603 /* PrimaryViewModel.swift in Sources */,
+				99BF0BAA267390A50029D603 /* CarInfoParser.swift in Sources */,
+				99CED10E2673BEDF00505AAA /* CarListItem.swift in Sources */,
+				9975F43A2674F54C00EE37EF /* CarInfoDetailsView.swift in Sources */,
+				99BF0BBE267391C80029D603 /* CarMapViewModel.swift in Sources */,
+				99BF0BCA267393130029D603 /* CarInfoRequestBuilder.swift in Sources */,
+				99FC842E2673AE6500974EDE /* CarsInfoParser.swift in Sources */,
+				99339338267496A1005DC656 /* CarImageFetcher.swift in Sources */,
+				99BF0B9626738FF20029D603 /* RentMeComponents.swift in Sources */,
+				994F4C0026748E9700475D0C /* UICarSummaryParser.swift in Sources */,
+				994E8A132673AA450048D974 /* CarsRepository.swift in Sources */,
+				994F4BF026748CD400475D0C /* CarsInfoInteractor.swift in Sources */,
+				994F4BFB26748E4300475D0C /* UICarSummary.swift in Sources */,
+				99AD35CD26767943000A6BE4 /* CarMapAnnotationImageHandler.swift in Sources */,
+				994F4C092674918C00475D0C /* CarListItemViewModel.swift in Sources */,
+				99339340267496C2005DC656 /* CarImageRequestBuilder.swift in Sources */,
+				99FF3D8026765649002885C3 /* Double+Clamp.swift in Sources */,
+				9907282F2674BFC300DCE761 /* UIConstants.swift in Sources */,
+				990C035D2677793B0029FF3A /* RentMeTesting.swift in Sources */,
+				9907283A2674C34600DCE761 /* UIColor+RGB.swift in Sources */,
+				990728492674C6BF00DCE761 /* CarPreviewViewModel.swift in Sources */,
+				994F4C0F267492C200475D0C /* CarImageCacheManager.swift in Sources */,
+				99A3BA7626738B0900D7EF86 /* PrimaryView.swift in Sources */,
+				9987C96626752A90002DB2BF /* ErrorHandling.swift in Sources */,
+				9975F4352674F48000EE37EF /* RentButton.swift in Sources */,
+				99DD5DEF26739C5B001B924C /* CarColorParser.swift in Sources */,
+				99D98DEA2676436800A76947 /* CarMapConstraints.swift in Sources */,
+				99BF0BB9267391A60029D603 /* CarListView.swift in Sources */,
+				9970856F26773864004502A0 /* NetworkStatus.swift in Sources */,
+				990C036226777CB80029FF3A /* NetworkSession.swift in Sources */,
+				99BF0BC3267391CF0029D603 /* CarListViewModel.swift in Sources */,
+				99BF0BCF2673931C0029D603 /* CarInfoFetcher.swift in Sources */,
+				993375F22674D8D500DC3B8A /* RentCarHeaderView.swift in Sources */,
+				99BF0BA52673908D0029D603 /* CarMap.swift in Sources */,
+				99708574267739D8004502A0 /* InternetConnectionErrorView.swift in Sources */,
+				997318922676295D0069954E /* BoxMapView.swift in Sources */,
+				99BF0BB4267391980029D603 /* CarMapView.swift in Sources */,
+				99FF3D8826765E42002885C3 /* CarMapAnnotation.swift in Sources */,
+				994F4C17267492F100475D0C /* CarImagesRepository.swift in Sources */,
+				993393332674950F005DC656 /* CarImageInteractor.swift in Sources */,
+				994E8A192673ACE60048D974 /* CarInfoManager.swift in Sources */,
+				9907284E2674C70E00DCE761 /* UICarInfoParser.swift in Sources */,
+				9903C03726762FC2003FB5F1 /* BoxMapViewModel.swift in Sources */,
+				99D98DE52676433600A76947 /* CarMapPosition.swift in Sources */,
+				99BF0B8026738DE40029D603 /* CarInfo.swift in Sources */,
+				9907283F2674C62500DCE761 /* CarPreviewView.swift in Sources */,
+				99BF0BD7267393A10029D603 /* Errors.swift in Sources */,
+				99A3BA7426738B0900D7EF86 /* RentMeApp.swift in Sources */,
+				99BF0B8C26738E5A0029D603 /* NetworkingAPI.swift in Sources */,
+				99AD35D526767A9C000A6BE4 /* GenericErrorMessageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA7D26738B0C00D7EF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9908C93326775B4B006641EE /* CarInfoJSONSamples.swift in Sources */,
+				9908C96C267764A9006641EE /* NetworkMocking.swift in Sources */,
+				9908C9662677643A006641EE /* TestCarInfoManager.swift in Sources */,
+				9908C94326776051006641EE /* TestUICarInfoParser.swift in Sources */,
+				9908C93E26775C15006641EE /* TestCarInfoParser.swift in Sources */,
+				9908C9512677626A006641EE /* TestCarColorParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3BA8826738B0C00D7EF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990C0340267773600029FF3A /* MapScreenUITests.swift in Sources */,
+				990C03452677736A0029FF3A /* ListScreenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99A3BA8326738B0C00D7EF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A3BA6F26738B0900D7EF86 /* RentMe */;
+			targetProxy = 99A3BA8226738B0C00D7EF86 /* PBXContainerItemProxy */;
+		};
+		99A3BA8E26738B0C00D7EF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A3BA6F26738B0900D7EF86 /* RentMe */;
+			targetProxy = 99A3BA8D26738B0C00D7EF86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99A3BA9326738B0C00D7EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99A3BA9426738B0C00D7EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99A3BA9626738B0C00D7EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F05A28F9D7A14259423DAD /* Pods-RentMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RentMe/Preview Content\"";
+				DEVELOPMENT_TEAM = XU7WQ382FC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RentMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99A3BA9726738B0C00D7EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21863DC5B4C8386564757069 /* Pods-RentMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RentMe/Preview Content\"";
+				DEVELOPMENT_TEAM = XU7WQ382FC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RentMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99A3BA9926738B0C00D7EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentMe.app/RentMe";
+			};
+			name = Debug;
+		};
+		99A3BA9A26738B0C00D7EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentMe.app/RentMe";
+			};
+			name = Release;
+		};
+		99A3BA9C26738B0C00D7EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU7WQ382FC;
+				INFOPLIST_FILE = RentMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentMe;
+			};
+			name = Debug;
+		};
+		99A3BA9D26738B0C00D7EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XU7WQ382FC;
+				INFOPLIST_FILE = RentMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = testing.RentMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99A3BA6B26738B0900D7EF86 /* Build configuration list for PBXProject "RentMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3BA9326738B0C00D7EF86 /* Debug */,
+				99A3BA9426738B0C00D7EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3BA9526738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3BA9626738B0C00D7EF86 /* Debug */,
+				99A3BA9726738B0C00D7EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3BA9826738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3BA9926738B0C00D7EF86 /* Debug */,
+				99A3BA9A26738B0C00D7EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3BA9B26738B0C00D7EF86 /* Build configuration list for PBXNativeTarget "RentMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3BA9C26738B0C00D7EF86 /* Debug */,
+				99A3BA9D26738B0C00D7EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99A3BA6826738B0900D7EF86 /* Project object */;
+}
