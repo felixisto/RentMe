@@ -1,3 +1,4 @@
+Don't forget to 'pod install' before usage.
 
 * Architecture *
 
