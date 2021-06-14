@@ -42,12 +42,11 @@ class CarImageCacheManagerImpl: CarImageCacheManager {
         
         print("\(String(describing: Self.self))| Fetching image for '\(key)'...'")
         
-        purgeCacheIfNecessary()
-        
-        let repository = self.repository
+        weak var weakSelf = self
         
         return fetcher.fetch(withURL: url).map { (img) -> UIImage in
-            repository.save(image: img, forKey: key)
+            weakSelf?.purgeCacheIfNecessary()
+            weakSelf?.repository.save(image: img, forKey: key)
             return img
         }.receive(on: DispatchQueue.main).eraseToAnyPublisher()
     }
