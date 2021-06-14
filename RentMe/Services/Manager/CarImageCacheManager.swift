@@ -40,15 +40,14 @@ class CarImageCacheManagerImpl: CarImageCacheManager {
             }.eraseToAnyPublisher()
         }
         
-        print("\(String(describing: Self.self))| Fetching image for '\(key)'...'")
-        
         weak var weakSelf = self
         
-        return fetcher.fetch(withURL: url).map { (img) -> UIImage in
+        return fetcher.fetch(withURL: url).receive(on: DispatchQueue.main).map { (img) -> UIImage in
+            print("\(String(describing: Self.self))| Fetching image for '\(key)'...'")
             weakSelf?.purgeCacheIfNecessary()
             weakSelf?.repository.save(image: img, forKey: key)
             return img
-        }.receive(on: DispatchQueue.main).eraseToAnyPublisher()
+        }.eraseToAnyPublisher()
     }
     
     private func purgeCacheIfNecessary() {
